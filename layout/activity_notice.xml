@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".activity.NoticeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:tint="@android:color/black"
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="backBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginLeft="15dp"
+                    fontPath="fonts/solaiman_lipi.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/notice"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/hight_text_sizee"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="cardOne"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/speaker"
+                android:layout_width="40dp"
+                android:tint="@color/gold_color"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_width="match_parent"
+                android:text="@string/tender_notice"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                fontPath="fonts/lato_regular.ttf"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="cardTwo"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/speaker"
+                android:layout_width="40dp"
+                android:tint="@color/gold_color"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_width="match_parent"
+                android:text="@string/app_version_1"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                fontPath="fonts/lato_regular.ttf"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="cardTree"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/speaker"
+                android:layout_width="40dp"
+                android:tint="@color/gold_color"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_width="match_parent"
+                android:text="@string/app_version_2"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                fontPath="fonts/lato_regular.ttf"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

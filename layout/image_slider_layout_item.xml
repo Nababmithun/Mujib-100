@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_auto_image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mujib"/>
+
+    <LinearLayout
+        android:background="@drawable/side_nav_bar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/description_text_size"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/gold_color"
+                android:layout_gravity="start|center"
+                android:text="Mujib"
+
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="8dp"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:id="@+id/descriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="2"
+                android:layout_gravity="start|center"
+                android:text="Mujib"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

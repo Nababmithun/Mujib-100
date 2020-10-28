@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PosterAndPublicationsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:tint="@android:color/black"
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="backBtn"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginLeft="15dp"
+                    fontPath="fonts/solaiman_lipi.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/posters_amp_publications"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/hight_text_sizee"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/profile_image"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mujib"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/gold_color"/>
+
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/committee_posters_amp_publications"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageOne"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/image1IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:minLines="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/national_implementation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageTwo"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/image2IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/posters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageThree"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image3IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/bi_fold_leaflet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageFore"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image4IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageFive"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image5IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageSix"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image6IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="Poster 3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageSeven"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image7IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageEight"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image8IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageNine"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image9IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageTen"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image10IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="imageElevent"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image11IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="image12"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image12IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="image13"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image13IV"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/download_icon"/>
+                    <TextView
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/description_text_size"
+                        fontPath="fonts/lato_regular.ttf"
+                        android:text="@string/poster_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

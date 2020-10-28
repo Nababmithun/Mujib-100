@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContactUsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="backBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:tint="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/lato_regular"
+                    fontPath="fonts/solaiman_lipi.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/contact_us_st"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/hight_text_sizee"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/contact_icon"
+            android:layout_height="@dimen/contact_icon_hight"
+            android:tint="@color/gold_color"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:fontFamily="@font/lato_regular"
+            fontPath="fonts/solaiman_lipi.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:lineSpacingExtra="@dimen/line_hide"
+            android:text="@string/contact_us"
+            android:textColor="@android:color/black"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/contact_icon"
+            android:layout_height="@dimen/contact_icon_hight"
+            android:src="@drawable/ic_email_black_24dp"
+            android:tint="@color/gold_color" />
+
+        <TextView
+            android:fontFamily="@font/lato_regular"
+            fontPath="fonts/solaiman_lipi.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:lineSpacingExtra="@dimen/line_hide"
+            android:text="@string/contact_us_email"
+            android:textColor="@android:color/black"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/contact_icon"
+            android:layout_height="@dimen/contact_icon"
+            android:src="@drawable/ic_call_black_24dp"
+            android:tint="@color/gold_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/line_hide"
+                android:text="@string/phone_number"
+                android:textColor="@android:color/black"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

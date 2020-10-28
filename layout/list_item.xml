@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/lato_regular"
+        fontPath="fonts/solaiman_lipi.ttf"
+        android:id="@+id/expandedListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingTop="@dimen/layout_padding_default"
+        android:textSize="15sp"
+        android:paddingRight="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingBottom="@dimen/layout_padding_default"
+        android:text="kicu akta"
+        android:textColor="@android:color/black"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>

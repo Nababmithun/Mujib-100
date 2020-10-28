@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/bookImageIV"
+                android:src="@drawable/book_two"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_height="450dp"/>
+
+            <Button
+                android:fontFamily="@font/lato_regular"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:id="@+id/downloadBtn"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/btn_bgg"
+                android:layout_width="200dp"
+                android:textSize="@dimen/description_text_size"
+                android:layout_gravity="center"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:textColor="@android:color/black"
+                android:text="@string/download"
+                android:textAllCaps="false"
+                android:layout_marginBottom="18dp"
+                android:layout_height="35dp"
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

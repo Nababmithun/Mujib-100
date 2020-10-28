@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginBottom="12dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/pressImageIV"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/press_image" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:lineSpacingExtra="@dimen/line_hide"
+                android:id="@+id/pressTitleTV"
+                android:maxLines="3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="The countdown to the Celebration of the 100 Year Anniversary of Bangabandhu Sheikh Mujibur Rahman"
+                android:textColor="#CC000000"
+                android:textSize="@dimen/description_text_size"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+
+                android:fontFamily="@font/lato_regular"
+                android:id="@+id/pressDateTV"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Time:9.05Am | 10 min ago"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

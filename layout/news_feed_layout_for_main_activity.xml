@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_marginBottom="12dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        app:cardCornerRadius="@dimen/keyline_1_minus_8dp"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/newsImageIV"
+                android:layout_width="250dp"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/graphic"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/videoIconIV"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha=".75"
+                android:tint="#f4b800"
+                android:src="@drawable/play_ducumentris"/>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+            android:fontFamily="@font/lato_regular"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginTop="12dp"
+                android:id="@+id/titleTV"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:text="Bipul SArkar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+               android:lines="2"
+                android:id="@+id/descriptionTV"
+                android:textSize="14dp"
+                android:textColor="@color/news_feed_description_color"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="@dimen/line_hide"
+                android:text="description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginBottom="6dp"
+                android:id="@+id/publishDateTV"
+                android:textSize="12dp"
+                fontPath="fonts/solaiman_lipi.ttf"
+                android:layout_marginTop="6dp"
+                android:text="description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+
+
+</LinearLayout>

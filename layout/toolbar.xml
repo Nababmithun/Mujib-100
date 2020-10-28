@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:elevation="3dp"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="7"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mujib" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notification_icon" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

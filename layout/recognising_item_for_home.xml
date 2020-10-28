@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="315dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="8dp"
+    android:backgroundTint="#FEFDE9"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+
+
+            app:civ_border_color="@color/gold_color"
+            app:civ_border_width="1dp" />
+
+
+        <TextView
+            android:fontFamily="@font/lato_regular"
+            fontPath="fonts/solaiman_lipi.ttf"
+            android:id="@+id/descriptionTV"
+            android:lineSpacingExtra="@dimen/line_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/indria_string"
+            android:textColor="@color/description_text_color"
+            android:textSize="@dimen/description_text_size"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:fontFamily="@font/lato_regular"
+            fontPath="fonts/solaiman_lipi.ttf"
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/indria_designation"
+            android:textSize="14dp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:fontFamily="@font/lato_regular"
+            fontPath="fonts/solaiman_lipi.ttf"
+            android:id="@+id/titleTV"
+            android:layout_marginTop="4sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="@string/indria_designation"
+            android:textSize="14dp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

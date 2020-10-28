@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Ducumentaries_detailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:tint="@android:color/black"
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="backBtn"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/backBtn"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/solaiman_lipi.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/documentaries"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/hight_text_sizee"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerview"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:show_buffering="always"
+                app:controller_layout_id="@layout/custom_controls">
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/playIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/play"
+                    android:tint="@color/gold_color"
+                    android:layout_gravity="center">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/pauseIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pause"
+                    android:tint="@color/gold_color"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/replayIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_replay_black_24dp"
+                    android:tint="@color/gold_color"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+                <ProgressBar
+                    android:id="@+id/exo_buffering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gold_color"
+                    android:layout_gravity="center"
+                    android:visibility="invisible">
+                </ProgressBar>
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:fontFamily="@font/lato_regular"
+        fontPath="fonts/solaiman_lipi.ttf"
+        android:lineSpacingExtra="@dimen/line_hide"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/captionsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bangabandhu Sheikh Mujibur Rahman delivered an important speech at the Central Shaheed Minar on National Martyr’s Day...."
+        android:textSize="@dimen/description_text_size"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>
